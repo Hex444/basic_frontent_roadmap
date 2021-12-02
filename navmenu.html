@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavMenu</title>
+    <style>
+
+        /* an easy begginer navbar */
+        .navbar{
+            background-color: aquamarine;
+            border-radius: 4px;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 30px 17px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+            paddint white;
+            font-weight: 100;
+            float: right;
+            padding: 1px 41px;
+            margin: 15px 6px;
+            opacity: 0.6;
+        }
+        .navbar input{
+            border: 2px solid grey;
+            border-radius: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="searchbox">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

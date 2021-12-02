@@ -1,0 +1,5 @@
+these contain the websites which will be useful in webdev
+1. source.unsplash.com
+2. html.com
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+pexels.com

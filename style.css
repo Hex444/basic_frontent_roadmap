@@ -1,0 +1,49 @@
+.MAIN{
+    color: rgb(103, 103, 255);
+    font-size: 40px;
+    text-align:center;
+    text-decoration: dotted;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 3px solid red;
+    background-image: url("first-aid-kit.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    height: 344px;
+    width: 344px;
+}
+
+
+.red{
+    background: red;
+    height: 70px;
+    color: aqua;
+    text-align:center;
+    padding-top: 12px;
+    font-size:17px;
+    background-position:top center;
+
+}
+
+
+.green{
+    background-color: green;
+    color: aqua; 
+}
+
+
+
+.textproperties{
+    text-align: center;
+    text-shadow: 1px 1px 2px red;
+    text-decoration: dotted;
+    color: rgb(103, 103, 255);
+    font-size: 40px;
+    text-decoration: dashed;
+    text-indent: 10000px;
+}
+
+
+.borderproperties{
+    border: 3px solid red;
+}

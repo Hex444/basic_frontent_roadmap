@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border:2px solid red;
+            background-color: rgb(196, 255, 138);
+            padding: 34px;
+            margin: 34px auto;
+            width: 667px;
+        }
+        .btn{
+            background-color: rgb(251, 211, 251);
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* a:hover{
+            color: plum;
+        } */
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            color:black;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus saepe numquam odio blanditiis! Tempora libero, delectus, veritatis vitae corporis quibusdam aspernatur tenetur modi perferendis ut odit eveniet saepe officiis vero voluptatem distinctio quas et!</p>
+        <a href="https://www.yahoo.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

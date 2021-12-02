@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tut finallyyyyyyyy</title>
+    <style>
+        /* flex properties */
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid red;
+            display: flex;
+            /* flex direction is row column or respective reverse  (default is row)*/
+            flex-direction: row;
+
+            /* flex wrap by default no wrap is used to set wrap for responsiveness */
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap; 
+            /* defalut */
+            flex-wrap: nowrap; 
+
+
+            
+            /* justify content makes the item go to the area regardless of height/width */
+            /* justify-content: center; */
+            /* no space at last */
+            /* justify-content: space-between; */
+            /* really bruv? */
+            /* justify-content: space-evenly; */
+            /* accts like a margin all around horizontically bruh */
+            /* justify-content: space-around; */
+            
+            
+            
+            
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* set space evenly for responsiveness */
+            /* align-items: stretch; */
+
+
+            /* flex flow is short hand for direction and wrap */
+            /* flex-flow: row wrap; */
+        }
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid purple;
+            margin: 10px;
+            padding: 3px;
+        }
+
+
+        /* 
+        ''''''''
+        ORDER IS THE ORDER IN WHICH ITEMS APPEAR, HIGHER THE ORDER LATER IT APPEARS
+        ''''''''
+        
+        */
+        #item1 {
+            /* '''''''''
+            flex-item properties
+            ''''''''' */
+            /* flex grow grows the item mentioned in propotion to others if width of device increase */
+            /* flex-grow: 3; */
+            /* flex shrink shrinks the item mentioned in propotion to others if width of device decrease */
+            /* flex-shrink: 3; */
+
+
+            /* change default size*/
+            /* when flex direction is set to row flex basis targets width */
+            /* when flex direction is set to column flex basis targets height */
+            /* flex-basis: 500px; */
+
+            /* short hand for flex grow, shrink, basis */
+            flex: 2 2 200px;
+
+            /* can change indivisual position */
+            align-self: flex-end;
+        }
+        #item2 {
+            /* flex-item properties */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flex Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags help in seo and help convey info you want to send -->
+    <!-- 1. charset helps to set charachter -->
+    <meta charset="UTF-8">
+    <!-- ie used for internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- helps with responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- helps to show website when searched for this -->
+    <meta name = "description" content="html,html tutorials, web dev">
+    <!-- used to allow crawling on websites -->
+    <meta name = "robots" content = "INDEX, FOLLOW">
+    <!-- include external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- include external js -->
+    <script src="style.js"></script>
+    <!-- the title that comes in the tab name -->
+    <title>ALLIN1</title>
+</head>
+
+<body>
+    <!-- these are the different headings -->
+    <h1>THIS IS HEADING 1</h1>
+    <h2>THIS IS HEADING 2</h2>
+    <h3>THIS IS HEADING 3</h3>
+    <h4>THIS IS HEADING 4</h4>
+    <h5>THIS IS HEADING 5</h5>
+    <h6>THIS IS HEADING 6</h6>
+    <!-- paragraph tags and there methods(idk the actual name) -->
+    <p>
+        Lorem ipsum, dolor sit amet 
+        <strong>this is strong</strong>,
+        <em>this is emphasised</em>
+        you cannot actually go to a new line you need br tag 
+        <br>          you can also make multiple tags with: tagname*23 <br>
+        ctrl + enter to jump to new line
+        bruh bruh bruh bruh bruh <br>
+        you can also make a horizontal ruler by hr:
+        you can also make multiple tags with: tagname*23 <br>
+        ctrl + enter to jump to new line
+        <hr>
+    </p>
+    <!-- dealing with links and images -->
+    <p>
+        <h1>links and images</h1>
+        <!-- this is used to open link when clicked on in same tab  -->
+        <a href="https://google.com">go to google</a> <br>
+        <!-- opens in new tab -->
+        <a href="https://google.com" target="_blank">go to google in new tab</a> <br>
+        <!-- opens in new tab -->
+        <a href="/bruh.html" target="_blank">go to internal link in new tab</a> <br>
+        <!-- if notload img alt msg shown -->
+        <img src="harry.jpg" alt="Error Loading Images"> <br>
+        <img src="https://source.unsplash.com/user/erondu/400x350" alt="Remote Images"><br>
+        <hr>
+    </p>
+   <!-- list and tables -->
+   <p>
+       <h1>tables and lists</h1>
+       <p>
+           <!-- unordered list:
+        disc ,square ,circle -->
+            <ul>
+                <li>this is my 1 item of my unordered list</li>
+                <li>this is my second item of my unordered list</li>
+                <li>this is my 3item of my unordered list</li>
+                <li>this is my 4 item of my unordered list</li>
+                <li>this is my 5 item of my unordered list</li>
+                <li>this is my 6 item of my unordered list</li>
+            </ul>
+            <!-- ordered list: 
+                you can use different marking styles
+            I,i,1,A,a -->
+            <ol type="A">
+                <li>1 item</li>
+                <li>2 item</li>
+                <li>3 item</li>
+                <li>4 item</li>
+            </ol>
+            <h3>Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th>Employee id </th>
+                        <th>Employee role </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- the first item -->
+                    <tr>
+                        <td>realhex444</td>
+                        <td>444</td>
+                        <td>Programmer</td>
+                    </tr>
+                    <!-- second item -->
+                    <tr>
+                        <td>bruhman</td>
+                        <td>284</td>
+                        <td>Bruher</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>       
+       <hr>
+   </p>
+   <!-- forms -->
+   <p>
+       <h1>html forms tutorials</h1>
+       <form action="backend.php">
+           <div>
+               <label for="name">Name</label>
+           : <input type="text" name="myname" id="name">
+           </div>
+           <br>
+           <div>
+           roll number : <input type="number"name="roll number">
+           </div>
+           <br>
+           <div>
+           email : <input type="email" name="myemail">
+           </div>
+           <br>
+           <div>
+               date : <input type="date" name="DOB">
+           </div>
+           <br>
+           <div>
+               <label for="rueligible">are you eligble : </label>
+               <input type="checkbox" name="myeligibility" id="rueligible">
+           </div>
+           <br>
+           <div>
+               gender : male<input type="radio" name="mygender"> female<input type="radio" name="mygender"> rather not say<input type="radio" name="mygender">
+
+           </div>
+           <br>
+           <div>
+               <label for="car">Car</label>
+               <select name="mycar" id="car">
+                   <option value="Indica" selected>Indica</option>
+                   <option value="Swift">Swift</option>
+               </select>
+
+           </div>
+           <br>
+           <div>
+           submit : <input type="submit" name="submit now">
+           reset : <input type="reset" name="reset now">
+           </div>
+
+       </form>
+   </p>
+   <hr>
+   <!-- entities -->
+   <h1>Entities</h1>
+   <div class="container">
+       <p>this is para</p>
+   </div>
+   <div class="container">
+       <p>this is 2&nbsp;para</p>
+       <p>paragraph is written by this &lt;p&gt;</p>
+       <p>emty charachter is written like this &#8203; </p>
+       <a href="https://dev.w3.org/html5/html-author/charref">entities list</a>
+   </div>
+   <hr>
+   <!-- semantic elements -->
+   <div>
+       <h1>Semantic elements</h1>
+   </div>
+</body>
+</html>
