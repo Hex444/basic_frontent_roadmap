@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth pseudo selectors</title>
+    <style>
+        input {
+            display: block;
+        }
+        .container {
+            margin: 10px 10px;
+            padding: 1px 1px;
+            display: block;
+            width: 233px;
+            margin: auto;
+
+        }
+        /* used to target input with type text */
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        /* targets a that has a set defined target (can be any value)*/
+        a[target] {
+            font-size: 34px;
+            color: aqua;
+
+        }
+
+        li:nth-child(3) {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="formnav">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+
+
+
+
+
+        <a href="https://www.google.com" target="_blank">gogoogle</a>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>
