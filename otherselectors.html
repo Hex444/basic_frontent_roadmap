@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other selectors</title>
+    <style>
+
+
+
+        /* just random styling */
+        h1 {
+            color: rgb(68, 0, 255);
+            font-weight: bold;
+            background-color: rgb(255, 251, 0);
+        }
+
+
+        /* 
+        
+        
+        
+        using (>) 
+        
+        
+        
+        */
+        /* > symbol here represents that p should be the direct-child of div.paracontainer (so only first one is affected) */
+        div.paracontainer > p {
+            color: cadetblue;
+        }
+
+
+
+
+        /* 
+        
+        
+        
+        using (+) 
+        
+        
+        
+        */
+
+
+        div.siblings + p {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- using > -->
+    <h1>This html file contains more about selectors of css</h1>
+    <!-- here p is direct container of paracontainer -->
+    <div class="paracontainer">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus perferendis ipsum aliquid atque amet recusandae possimus earum, ratione incidunt non assumenda animi nisi fugiat ab quaerat pariatur nihil molestias fugit tempora!</p>
+    </div> 
+    <!-- here p is in para container but the direct parent is yetanotherparacontainer -->
+    <div class="paracontainer">
+        <div class="yetanotherparacontainer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus perferendis ipsum aliquid atque amet recusandae possimus earum, ratione incidunt non assumenda animi nisi fugiat ab quaerat pariatur nihil molestias fugit tempora!</p>
+        </div>
+    </div> 
+    <hr>
+
+
+    <!-- using + -->
+    <div class="maincontainer">
+        <div class="sibling1 siblings">i am the first sibling</div>
+        <div class="sibling2 siblings">i am the second sibling</div>
+        <!-- as it is a direct sibling of the other divs it is affected by the above css -->
+        <p class="sibling3 siblings">this para is a direct sibling of the Other divs</p>
+    </div>
+
+
+    
+</body>
+</html>
