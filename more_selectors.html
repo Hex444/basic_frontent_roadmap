@@ -29,9 +29,24 @@
             color: aqua;
 
         }
-
+        /* targets third child */
         li:nth-child(3) {
             color: aquamarine;
+        }
+        /* every second child */
+        /* takes n as 0 keeps adding the second number so every 2nd child */
+        /* if num eval to 0 then nothing happens to any of the children */
+        li:nth-child(2n+0) {
+            color: red;
+        }
+
+        /* odd child */
+        li:nth-child(odd) {
+            background-color: chocolate;
+        }
+        /* even child */
+        li:nth-child(even) {
+            background-color: burlywood;
         }
     </style>
 </head>
