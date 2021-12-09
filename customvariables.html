@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        /* in root they can be used anywhere */
+        :root {
+            --red: red;
+        }
+        .box {
+            /* variables defined here can only be used here (in .box) */
+            --temp-border: 2px solid blue;
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            /* border: var(--temp-border); */
+        }
+        .container {
+            display: flex;
+            /* background-color: var(--red); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
