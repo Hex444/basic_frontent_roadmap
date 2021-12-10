@@ -8,6 +8,7 @@
     <style>
         .container {
             display: flex;
+            background-color: aqua;
         }
         .box {
             background-color: cadetblue;
@@ -18,14 +19,14 @@
             animation-duration: 3s;
             animation-iteration-count: infinite;
             animation-fill-mode: forwards;
-            animation-timing-function: ease-out;
+            animation-timing-function: ease-in;
         }
         @keyframes Hex {
             from {
-                width: 200px;
+                width: 0%;
             }
             to {
-                width: 1200px;
+                width: 100%;
             }
         }
     </style>
@@ -33,7 +34,6 @@
 <body>
     <div class="container">
         <div class="box">
-            box-1
         </div>
     </div>
 </body>
