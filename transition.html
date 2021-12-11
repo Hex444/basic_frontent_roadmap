@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .flexbx {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 0, 0);
+            /* transition-property: background-color;
+            transition-duration: 10s;
+
+            transition-timing-function: ease-in; */
+            
+            /* ease in is slow at begenning  */
+            /* shorthand: property duration timingfunc delay */
+            transition: background-color 1s ease-in 0.1s ;
+            transition: all 5s ease-in 0.1s ;
+        }
+        .flexbx:hover {
+            background-color: rgb(255, 194, 194);
+            height: 400px;
+            width: 400px;
+            color: blueviolet;
+            font-size: 20px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flexbx">
+            definetley not a box.
+        </div>
+    </div>
+</body>
+</html>
