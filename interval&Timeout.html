@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval and Clear Out</title>
+</head>
+<body>
+    <div class="container">
+        time is <span id="time">time</span>
+    </div>
+</body>
+<script>
+    // setTimeout -> allows us to run the fuction 1ce after specified interval of time
+    // clearTimeout -> allows us to run the fuction repeatedly after specified interval of time
+    function checkdis(){
+        function greet(name){
+            console.log("Yo bro " + name);
+        }
+        timer = setTimeout(greet, 5000, "--insert name here--");
+        console.log(timer);
+        clearTimeout(timer);
+
+        function yell() {
+            console.log("L");
+        }
+        setInterval(yell, 2000)
+        //  can also be terminated by clearinterval
+    }
+
+
+    
+    function displayTime(){
+        time = new Date();
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime, 1000)
+</script>
+</html>
