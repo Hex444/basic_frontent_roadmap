@@ -7,7 +7,7 @@
     <title>DOM accessing</title>
 </head>
 <body>
-    <div id="main" class="container">
+     <div id="main" class="container">
         <ul id="nav">
             <li>HOme</li>
             <li>YO</li>
@@ -15,11 +15,21 @@
             <li>Yo3</li>
         </ul>
     </div>
+    <div class="container">
+        Another container
+    </div>
+    <div id="changer">
+        Another container
+    </div> 
 </body>
 <script>
     let main = document.getElementById('main');
     console.log(main);
     let nav = document.getElementById('nav');
     console.log(nav);
+    let containers = document.getElementsByClassName("container");
+    console.log(containers);
+    let changer = document.getElementById("changer");
+    console.log(changer);
 </script>
 </html>
